@@ -67,6 +67,18 @@ estimation <- mixture.EM(w.init = c(.3, .4, .3), mu.init = 1, X)
 estimation
 ```
 
+
+``` r
+## $pi
+## [1] 0.00011604534 0.76893798357 0.23094597109
+
+## $mu
+## [1] 1.0026908
+
+## $logliks
+## ...
+```
+
 # Boostrapping the standard errors
 The following code performs bootstrap resampling to estimate the standard errors.
 
@@ -106,6 +118,22 @@ data <- data.frame(x = X)
 boot.result <- boot(data = data, statistic = myfun, R = 99)
 
 boot.result
+```
+
+``` r
+## ORDINARY NONPARAMETRIC BOOTSTRAP
+
+
+## Call:
+## boot(data = data, statistic = myfun, R = 99)
+
+
+## Bootstrap Statistics :
+##          original       bias    std. error
+## t1* 0.00011604534  0.090873373 0.129549705
+## t2* 0.76893798357 -0.070296231 0.124585479
+## t3* 0.23094597109 -0.020577142 0.045616628
+## t4* 1.00269083189  0.069282159 0.139459538
 ```
 
 
