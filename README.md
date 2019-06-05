@@ -2,6 +2,7 @@
 The scripts implement an EM algorithm to fit the mixture model in Li and Shen (2019) to assess the pleiotropic effects of the CCR5Delta32 mutation.
 
 # EM algorithm for the mixture model
+The following three functions implements the EM algorithm for fitting the 3-component mixture model: $\pi_{-}N(-\mu_Z,1)+\pi_{0}N(0,1)+\pi_{+}N(\mu_Z,1)$ for the Z scores of the CCR5$\Delta$32 variant across a series of complex diseases.
 
 ``` r
 ## mixture model 190603 three components
