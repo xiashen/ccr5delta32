@@ -117,7 +117,7 @@ myfun <- function(X, indices) {
 
 
 data <- data.frame(x = X)
-
+require(boot)
 boot.result <- boot(data = data, statistic = myfun, R = 99)
 
 boot.result
