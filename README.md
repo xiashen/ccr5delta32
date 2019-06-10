@@ -62,7 +62,8 @@ EM.iter <- function(w.curr, L, X) {
 Below, we set up starting values to estimate the parameters for the paper.
 
 ``` r
-## real data: X is a vector containing 131 Z scores for the associations between the mutation and 131 curated disease phenotypes
+## real data: X is a vector containing 131 Z scores for the associations 
+## between the mutation and 131 curated disease phenotypes
 
 estimation <- mixture.EM(w.init = c(.3, .4, .3), mu.init = 1, X)
 
