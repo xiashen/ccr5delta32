@@ -82,7 +82,7 @@ estimation
 ## ...
 ```
 
-# Boostrapping the standard errors
+# Bootstrapping the standard errors
 The following code performs bootstrap resampling to estimate the standard errors.
 
 ``` r
